@@ -2,10 +2,15 @@
 
 .logo {
   font-family: 'Lobster', cursive;
-  font-size: 150%;
+  font-size: 250%;
   color: #5C69B0;
 }
 
 #is-nav:hover{
-  background-color: rgba(0,0,255,.5);
+  background-color: rgba(0,0,255,1);
+}
+
+.is-nav{
+  top: 20%;
+  margin-left: .5%;
 }
