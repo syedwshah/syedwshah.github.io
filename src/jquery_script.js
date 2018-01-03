@@ -6,4 +6,16 @@ $( document ).ready(function() {
     $(".link2").css({
       color: 'blue'
     });
+
+    $(".github").css({
+      color: '#6e5494'
+    });
+    $(".linkedin").css({
+      color: '#0077B5'
+    });
+    $(".facebook").css({
+      color: '#3b5998'
+    });
 });
+
+
