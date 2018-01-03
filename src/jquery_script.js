@@ -3,4 +3,7 @@ $( document ).ready(function() {
     $(".link").css({
       color: 'purple'
     });
+    $(".link2").css({
+      color: 'blue'
+    });
 });
