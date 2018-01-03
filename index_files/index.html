@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +15,9 @@
   <body>
 
     <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <h1 class='logo'>Syed W Shah</h1>
-        </a>
+        <h1 class="navbar-item logo">Syed W Shah</h1>
         <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
           <span></span>
           <span></span>
@@ -29,14 +27,14 @@
 
       <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item button is-large is-primary is-outlined is-nav" href="#">
+          <a class="navbar-item button is-large is-primary is-outlined is-nav" href="index.html">
             <strong>Home</strong>
           </a>
-          <a class="navbar-item button is-large is-link is-outlined is-nav" href="#">
+          <a class="navbar-item button is-large is-link is-outlined is-nav" href="#about-section">
             <strong>About</strong>
           </a>
           <div class="navbar-item has-dropdown is-hoverable is-boxed">
-            <a class="navbar-link is-nav button is-large is-info is-outlined" href="#" id="is-nav">
+            <a class="navbar-link is-nav button is-large is-info is-outlined" href="#projects-section" id="is-nav">
               <strong>Projects</strong>
             </a>
             <div class="navbar-dropdown is-boxed">
@@ -55,10 +53,10 @@
             </div>
           </div>
          <a class="navbar-item button is-large is-success is-outlined is-nav" href="#">
-            <strong>Educational</strong>
+            <strong>Resume</strong>
           </a>
           <a class="navbar-item button is-large is-danger is-outlined is-nav" href="#">
-            <strong>Misc (Coming soon!)</strong>
+            <strong>Fun/Misc</strong>
           </a>
         </div>
 
@@ -89,15 +87,110 @@
       </div>
     </nav>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
-    </div>
+
+    <section class="hero is-primary has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Syed W Shah
+          </h1>
+          <h2 class="subtitle ">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i> Welcome to my site! <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-light has-text-centered">
+      <div class="hero-body">
+        <figure class="">
+          <img src="../assets/syed.png" id="my-image" width="444" height="333">
+        </figure>
+      </div>
+    </section>
+
+
+    <section class="hero is-medium is-primary is-danger" id="about-section">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-centered">
+            About
+          </h1>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Pariatur consequatur iusto quisquam sunt mollitia,
+            reiciendis qui inventore quos dicta aut animi architecto.
+            Cumque cum, qui minima voluptatem tempora obcaecati porro.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-pic">
+      <figure class="image is-16by9">
+        <img src="https://static.pexels.com/photos/226589/pexels-photo-226589.jpeg">
+      </figure>
+    </section>
+
+    <section class="hero is-info is-medium" id="projects-section">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-centered">
+            Projects
+          </h1>
+          <br>
+          <h2 class="subtitle has-text-centered">
+            <a id="test" class="button is-dark" href="#test">Full Stack</a>
+            <a class="button is-dark" href="#">Front-End</a>
+            <a class="button is-dark" href="#">CSS Art</a>
+            <a class="button is-dark" href="#">Static Web Pages</a>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-light is-medium has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <u>Full Stack Development</u>
+          </h1>
+          <br>
+          <h2 class="subtitle">
+            <strong>Meme Dream</strong>
+          </h2>
+          <p>A fun meme sharing app</p>
+          <img src="../meme-app.gif" alt="meme-app">
+          <br><br>
+          <p>This project was created with Rails for the Back-End, and a React Front-End</p>
+          <p class="link"><a href="https://github.com/syedshah94/meme_app" target="_blank">Check it out on github <i class="fa fa-github" aria-hidden="true"></i></a></p>
+          <hr>
+          <br>
+          <h2 class="subtitle">
+            <strong>Courtesy Parking</strong>
+          </h2>
+          <p>An app where people can place a marker on the map when they are about to leave a parking spot,<br>
+          so that someone else may take it, hence the name <strong>Courtesy Parking</strong></p>
+          <br>
+          <img src="../parking-app.gif" alt="meme-app">
+          <br><br>
+          <p>This project was created with Express.js</p>
+          <p class="link"><a href="https://github.com/syedshah94/Parking-App" target="_blank">Check it out on github <i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Footer?
+        </h1>
+        <p class="subtitle">
+          My first website with <strong>Bulma</strong>!
+        </p>
+      </div>
   </section>
 
 

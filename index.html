@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" href="../styles/mystyles.scss">
+    <script src="./src/script.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./src/jquery_script.js"></script>
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-brand">
+        <h1 class="navbar-item logo">Syed W Shah</h1>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item button is-large is-primary is-outlined is-nav" href="index.html">
+            <strong>Home</strong>
+          </a>
+          <a class="navbar-item button is-large is-link is-outlined is-nav" href="#about-section">
+            <strong>About</strong>
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable is-boxed">
+            <a class="navbar-link is-nav button is-large is-info is-outlined" href="#projects-section" id="is-nav">
+              <strong>Projects</strong>
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="#">
+                Full-Stack Apps
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                CSS Art
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                Front-End Only
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                Static Web Pages
+              </a>
+            </div>
+          </div>
+         <a class="navbar-item button is-large is-success is-outlined is-nav" href="#">
+            <strong>Resume</strong>
+          </a>
+          <a class="navbar-item button is-large is-danger is-outlined is-nav" href="#">
+            <strong>Fun/Misc</strong>
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                  <span class="icon">
+                    <i class="fa fa-twitter"></i>
+                  </span>
+                  <span>
+                    Tweet
+                  </span>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-primary" href="https://github.com/jgthms/bulma/archive/0.5.1.zip">
+                  <span class="icon">
+                    <i class="fa fa-download"></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+  <section class="hero is-primary has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Syed W Shah
+        </h1>
+        <h2 class="subtitle ">
+          <i class="fa fa-arrow-down" aria-hidden="true"></i> Welcome to my site! <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light has-text-centered">
+    <div class="hero-body">
+      <figure class="">
+        <img src="./assets/syed.png" id="my-image" width="444" height="333">
+      </figure>
+    </div>
+  </section>
+
+
+  <section class="hero is-medium is-primary is-danger" id="about-section">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-centered">
+          About
+        </h1>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Pariatur consequatur iusto quisquam sunt mollitia,
+          reiciendis qui inventore quos dicta aut animi architecto.
+          Cumque cum, qui minima voluptatem tempora obcaecati porro.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro-pic">
+    <figure class="image is-16by9">
+      <img src="https://static.pexels.com/photos/226589/pexels-photo-226589.jpeg">
+    </figure>
+  </section>
+
+  <section class="hero is-info is-medium" id="projects-section">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-centered">
+          Projects
+        </h1>
+        <br>
+        <h2 class="subtitle has-text-centered">
+          <a id="test" class="button is-dark" href="#test">Full Stack</a>
+          <a class="button is-dark" href="#">Front-End</a>
+          <a class="button is-dark" href="#">CSS Art</a>
+          <a class="button is-dark" href="#">Static Web Pages</a>
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-medium has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Full Stack Development
+        </h1>
+        <br>
+        <h2 class="subtitle">
+          <strong>Meme Dream</strong>
+        </h2>
+        <p>A fun meme sharing app.</p>
+        <img src="../meme-app.gif" alt="meme-app">
+        <br><br>
+        <p>This project was created with a Rails Back-End With React Front-End</p>
+        <p id="link"><a href="https://github.com/syedshah94/meme_app">Check it out on github <i class="fa fa-github" aria-hidden="true"></i></a></p>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Footer?
+        </h1>
+        <p class="subtitle">
+          My first website with <strong>Bulma</strong>!
+        </p>
+      </div>
+  </section>
+
+
+  </body>
+</html>
