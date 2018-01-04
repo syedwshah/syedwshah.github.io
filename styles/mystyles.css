@@ -20,7 +20,12 @@
   background-color: #fafafa;
 }
 
-//project links
+/*project links*/
 #link {
   color: blue;
+}
+
+/*extra margin on projects on navbar*/
+.extra-margin {
+  margin-left: 10%;
 }
