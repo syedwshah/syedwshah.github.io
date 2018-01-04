@@ -7,6 +7,7 @@ $( document ).ready(function() {
       color: 'blue'
     });
 
+
     $(".github").css({
       color: '#6e5494'
     });
