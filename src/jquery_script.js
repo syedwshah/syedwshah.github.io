@@ -18,16 +18,13 @@ $( document ).ready(function() {
       color: '#3b5998'
     });
 
-
-    $(window).resize(function(){
-      if ($(window).width() >= 1020){
-        // do something here
-        $(".nav-link").css({
-          color: 'white'
-        });
-      }
-    });
-
+    //media query
+    if ($(window).width() >= 1024){
+      // do something here
+      $(".nav-link").css({
+        color: 'white'
+      });
+    }
 });
 
 
