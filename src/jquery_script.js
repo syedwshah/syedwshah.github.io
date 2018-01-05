@@ -17,6 +17,17 @@ $( document ).ready(function() {
     $(".facebook").css({
       color: '#3b5998'
     });
+
+
+    $(window).resize(function(){
+      if ($(window).width() >= 1020){
+        // do something here
+        $(".nav-link").css({
+          color: 'white'
+        });
+      }
+    });
+
 });
 
 

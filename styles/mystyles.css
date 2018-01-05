@@ -2,23 +2,23 @@
 
 .logo {
   font-family: 'Lobster', cursive;
-  font-size: 250%;
+  font-size: 200%;
   color: #5C69B0;
 }
 
-#is-nav:hover{
+/*#is-nav:hover{
   background-color: rgba(0,0,255,1);
-}
+}*/
 
-.is-nav{
+/*.is-nav{
   top: 20%;
   margin-left: .5%;
-}
+}*/
 
-.navbar {
+/*.navbar {
   padding-bottom: 1%;
   background-color: #fafafa;
-}
+}*/
 
 /*project links*/
 #link {
@@ -28,4 +28,30 @@
 /*extra margin on projects on navbar*/
 .extra-margin {
   margin-left: 10%;
+}
+
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .navbar-nav {
+      position: absolute;
+      top: 20%;
+    }
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+    .navbar-nav {
+      position: absolute;
+      top: 20%;
+    }
 }
