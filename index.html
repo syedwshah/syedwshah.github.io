@@ -2,104 +2,70 @@
 <html class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hello from Syed</title>
+
     <link rel="icon" href="http://www.bluthemes.com/assets/img/blog/12/liftoff.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
-    <link rel="stylesheet" href="./styles/mystyles.css">
-    <script src="./src/script.js"></script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
     <script src="./src/jquery_script.js"></script>
+    <link rel="stylesheet" href="./styles/mystyles.css">
+
   </head>
   <body>
-
-    <!-- navbar -->
-    <nav class="navbar is-fixed-top">
-      <div class="navbar-brand">
-        <h1 class="navbar-item logo"><a href="index.html">Syed W Shah</a></h1>
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item button is-large is-primary is-outlined is-nav" href="index.html">
-            <strong>Home</strong>
-          </a>
-          <a class="navbar-item button is-large is-link is-outlined is-nav" href="#about-section">
-            <strong>About</strong>
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable is-boxed">
-            <a class="navbar-link is-nav button is-large is-info is-outlined" href="index.html#projects-section" id="is-nav">
-              <strong class="extra-margin">Projects</strong>
+  <!-- Start of Navbar -->
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top">
+    <br>
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand logo" href="#">Syed W Shah</a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html#projects-section" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects <span class="sr-only">(current)</span>
             </a>
-            <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="#full-stack">
-                Full-Stack Apps
-              </a>
-              <a class="navbar-item" href="#front-end">
-                Front-End
-              </a>
-              <a class="navbar-item" href="#static-web">
-                Static Web Pages
-              </a>
-              <a class="navbar-item" href="#css-art">
-                CSS Art
-              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#projects-section">Full-Stack Apps</a>
+              <a class="dropdown-item" href="#front-end">Front-End</a>
+              <a class="dropdown-item" href="#static-web">Static Web Pages</a>
+              <a class="dropdown-item" href="#css-art">CSS Art</a>
             </div>
-          </div>
-          <a class="navbar-item button is-large is-danger is-outlined is-nav" href="#fun">
-            <strong>Fun/Misc</strong>
-          </a>
-         <a class="navbar-item button is-large is-success is-outlined is-nav" href="#resume">
-            <strong>Resume</strong>
-          </a>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item has-text-centered">
-            <div class="field is-grouped">
-              <p class="control">
-                <a target="_blank" href="https://www.linkedin.com/in/swsprofile/" class="linkedin">
-                  <span class="icon">
-                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                  </span>
-                  <span>
-                    LinkedIn
-                  </span>
-                </a>
-              </p>
-              <p class="control">
-                <a target="_blank" href="https://github.com/syedwshah" class="github">
-                  <span class="icon">
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                  </span>
-                  <span>Github</span>
-                </a>
-              </p>
-              <p class="control">
-                <a href="" class="facebook">
-                  <span class="icon">
-                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                  </span>
-                  <span>Facebook</span>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fun">Fun/Misc <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
+  <!-- End of Navbar -->
 
     <section class="hero is-primary has-text-centered">
       <div class="hero-body">
         <div class="container">
+          <br>
           <h1 class="title">
             Syed W Shah
           </h1>
@@ -150,9 +116,7 @@
             version control, I use git. And I also enjoy working with Bootstrap and Bulma.io
             for when I want to create a design quickly.
           </h2>
-          <section class="skills">
 
-          </section>
         </div>
       </div>
     </section>
@@ -308,7 +272,7 @@
           <p>I knew someone who would say "99% of the time" so frequently<br>
           I figured it would be funny to make an animation of it, which we could use when he would want to say that</p>
           <p>Check it out here:</p>
-          <p class="link2"><a href="http://oceanographer-photodiode-85176.bitballoon.com/" target="_blank">Or try it yourself by clicking here! <i class="fa fa-cloud" aria-hidden="true"></i></a></p>
+          <p class="link2"><a href="http://oceanographer-photodiode-85176.bitballoon.com/" target="_blank">99% of the Time <i class="fa fa-cloud" aria-hidden="true"></i></a></p>
         </div>
       </div>
       <img src="./assets/pexels-colors2.png" alt="crayons">
@@ -360,9 +324,9 @@
             </p>
 
             <p class="column">
-              <a target="_blank" href="">
-                  <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                  Facebook
+              <a target="_blank" href="https://twitter.com/swsprofile">
+                  <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                  Twitter
               </a>
             </p>
           </section>
