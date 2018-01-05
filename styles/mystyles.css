@@ -6,19 +6,9 @@
   color: #5C69B0;
 }
 
-/*#is-nav:hover{
-  background-color: rgba(0,0,255,1);
-}*/
-
-/*.is-nav{
-  top: 20%;
-  margin-left: .5%;
-}*/
-
-/*.navbar {
-  padding-bottom: 1%;
-  background-color: #fafafa;
-}*/
+.profile-pic {
+  border-radius: 50%;
+}
 
 /*project links*/
 #link {
