@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   font-family: 'Lobster', cursive;
   font-size: 200%;
