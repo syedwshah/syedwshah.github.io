@@ -17,15 +17,9 @@ $( document ).ready(function() {
     $(".facebook").css({
       color: '#3b5998'
     });
-
-    //media query
-    if ($(window).width() >= 1024){
-      // do something here
-      $(".nav-link").css({
-        color: 'white'
-      });
-    }
-
+    $(".nav-link").css({
+      color: 'white'
+    });
 });
 
 
